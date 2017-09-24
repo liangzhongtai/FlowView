@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlowView">  
+        <attr name="fv_useAutoGrid"         format="boolean"/>
+        <attr name="fv_useGrid"             format="boolean"/>
+        <attr name="fv_oneLineCount"        format="integer"/>
+        <attr name="fv_lineCount"           format="integer"/>
+        <attr name="fv_horizionWidth"       format="float"/>
+        <attr name="fv_maxTextLine"         format="integer"/>
+
+        <attr name="fv_useHLine"            format="boolean"/>
+        <attr name="fv_useVLine"            format="boolean"/>
+        <attr name="fv_padding_leftLine"    format="dimension"/>
+        <attr name="fv_padding_rightLine"   format="dimension"/>
+        <attr name="fv_padding_topLine"     format="dimension"/>
+        <attr name="fv_padding_bottomLine"  format="dimension"/>
+        <attr name="fv_hLineColor"          format="color"/>
+        <attr name="fv_vLineColor"          format="color"/>
+        <attr name="fv_hLineWidth"          format="dimension"/>
+        <attr name="fv_vLineWidth"          format="dimension"/>
+        <attr name="fv_firstHLine"          format="boolean"/>
+        <attr name="fv_lastHLine"           format="boolean"/>
+        <attr name="fv_firstVLine"          format="boolean"/>
+        <attr name="fv_lastVLine"           format="boolean"/>
+        <attr name="fv_hLineAllCover"       format="boolean"/>
+        <attr name="fv_vLineAllCover"       format="boolean"/>
+        <attr name="fv_titleLineAllCover"   format="boolean"/>
+        <attr name="fv_lineType"            format="enum">
+            <enum name="solid"              value="0"/>
+            <enum name="dash"               value="1"/>
+            <enum name="circle"             value="2"/>
+        </attr>
+        <attr name="fv_dash"                format="string"/>
+        <attr name="fv_circleRadius"        format="dimension"/>
+        <attr name="fv_circleInterval"      format="dimension"/>
+
+        <attr name="fv_bg"                  format="reference"/>
+        <attr name="fv_bgColor"             format="color"/>
+        <attr name="fv_color"               format="color"/>
+
+        <attr name="fv_selected_bg"         format="reference"/>
+        <attr name="fv_selected_bgColor"    format="color"/>
+        <attr name="fv_selected_color"      format="color"/>
+
+        <attr name="fv_button_bg"           format="reference"/>
+        <attr name="fv_button_bgColor"      format="color"/>
+        <attr name="fv_button_color"        format="color"/>
+
+        <attr name="fv_hot_bg"              format="reference"/>
+        <attr name="fv_hot_bgColor"         format="color"/>
+        <attr name="fv_hot_color"           format="color"/>
+
+
+        <attr name="fv_use_selected"        format="boolean"/>
+        <attr name="fv_padding"             format="dimension"/>
+        <attr name="fv_padding_left"        format="dimension"/>
+        <attr name="fv_padding_top"         format="dimension"/>
+        <attr name="fv_padding_right"       format="dimension"/>
+        <attr name="fv_padding_bottom"      format="dimension"/>
+        <attr name="fv_h_space"             format="dimension"/>
+        <attr name="fv_v_space"             format="dimension"/>
+        <attr name="fv_all_at_start"        format="boolean"/>
+        <attr name="fv_colse_at_start"      format="boolean"/>
+        <attr name="fv_confirm_at_start"    format="boolean"/>
+        <attr name="fv_horizonDivisor"      format="integer"/>
+        <attr name="fv_oneLineTitle"        format="boolean"/>
+
+        <attr name="fv_animation_type"           format="enum">
+            <enum name="anima_alpha_delay"  value="1"/>
+            <enum name="anima_alpha_random" value="2"/>
+            <enum name="anima_scale_random" value="3"/>
+            <enum name="anima_free"         value="4"/>
+        </attr>
+        <attr name="fv_selected_type"       format="enum">
+            <enum name="single"                             value="0"/>
+            <enum name="sigle_with_close"                   value="1"/>
+            <enum name="sigle_with_confirm"                 value="2"/>
+            <enum name="sigle_with_title_close"             value="3"/>
+            <enum name="sigle_with_title_confirm"           value="4"/>
+            <enum name="multiple"                           value="5"/>
+            <enum name="multiple_with_close"                value="6"/>
+            <enum name="multiple_with_all"                  value="7"/>
+            <enum name="multiple_with_title_close"          value="8"/>
+            <enum name="multiple_with_title_all"            value="9"/>
+            <enum name="single_with_title"                  value="10"/>
+            <enum name="multiple_with_title"                value="11"/>
+            <enum name="multiple_with_two_button"           value="12"/>
+            <enum name="multiple_with_three_button"         value="13"/>
+            <enum name="multiple_with_title_two_button"     value="14"/>
+            <enum name="multiple_with_title_three_button"   value="15"/>
+            <enum name="multiple_group"                     value="16"/>
+            <enum name="multiple_group_with_title"          value="17"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

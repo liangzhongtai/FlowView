@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:padding="7dp"
+        >
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:background="@color/colorWhite"
+            />
+        <ImageButton
+            android:id="@+id/ib"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_search"
+            />
+    </RelativeLayout>
+    <com.juzi.flowview.view.FlowView
+        android:id="@+id/fv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fv_selected_type="single_with_title"
+        />
+</LinearLayout>

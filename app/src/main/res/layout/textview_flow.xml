@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:focusable="true"
+          android:clickable="true"
+          android:textSize="13sp"
+          android:padding="7dp"
+          android:textColor="@color/color4dBlack"
+          android:background="@drawable/shape_rectangle_corner4_gray_solid"
+          android:id="@+id/tv_province_city"
+/>
