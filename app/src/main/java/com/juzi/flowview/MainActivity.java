@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,FilterActivity.class));
             }
-        });
+         });
         mMultiLevelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
                             .setOneLineCount(3)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_grid){
-                    mStyle1FV
+                    mStyle1FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewSingle(citys, R.layout.textview_flow, 0, 1, false)
                             .setUseGrid(true)
@@ -203,27 +203,27 @@ public class MainActivity extends AppCompatActivity {
                             .setUseSelected(true);
                 }else if(checkedId==R.id.rb_mutile_grid){
                     List list = new ArrayList();
-                    list.add(2);
+                     list.add(2);
                     list.add(5);
                     list.add(7);
-                    mStyle1FV
-                            .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
+                    mStyle1FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
+                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutile(citys, R.layout.textview_flow, list, 1, false)
                             .setUseGrid(true)
                             .setOneLineCount(3)
                             .setUseSelected(true);
                 }
-            }
+             }
         });
         mStyle11RG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
+             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId==R.id.rb_common_autogrid){
                     mStyle11FV.addViewCommon(citys, R.layout.textview_flow, 1, false)
                             .setAutoUseGrid(true)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_autogrid){
-                    mStyle11FV
+                    mStyle11FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewSingle(citys, R.layout.textview_flow, 0, 1, false)
                             .setAutoUseGrid(true)
@@ -231,9 +231,9 @@ public class MainActivity extends AppCompatActivity {
                 }else if(checkedId==R.id.rb_mutile_autogrid){
                     List list = new ArrayList();
                     list.add(2);
-                    list.add(5);
+                     list.add(5);
                     list.add(7);
-                    mStyle11FV
+                    mStyle11FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutile(citys, R.layout.textview_flow, list, 1, false)
                             .setAutoUseGrid(true)
@@ -249,20 +249,20 @@ public class MainActivity extends AppCompatActivity {
                             .setAutoUseGrid(true)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_autogrid_useHLine){
-                    mStyle14FV
+                    mStyle14FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewSingle(citys, R.layout.textview_flow, 0, 1, false)
-                            .setAutoUseGrid(true)
+                             .setAutoUseGrid(true)
                             .setUseSelected(true);
                 }else if(checkedId==R.id.rb_mutile_autogrid_useHLine){
                     List list = new ArrayList();
                     list.add(2);
                     list.add(5);
                     list.add(7);
-                    mStyle14FV
-                            .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
+                    mStyle14FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
+                        .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutile(citys, R.layout.textview_flow, list, 1, false)
-                            .setAutoUseGrid(true)
+                             .setAutoUseGrid(true)
                             .setUseSelected(true);
                 }
             }
@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
                     mStyle2FV.addViewCommon(fruits,R.layout.textview_flow, 2, 2)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_lines){
-                    mStyle2FV
+                    mStyle2FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewSingle(fruits, R.layout.textview_flow, 0, 2, 2)
                             .setUseSelected(true);
@@ -284,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
 
                     list.add(5);
                     list.add(7);
-                    mStyle2FV
+                    mStyle2FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutile(fruits, R.layout.textview_flow, list, 2, 2)
                             .setUseSelected(true);
@@ -299,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
                             .textview_flow_news, 3)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_title){
-                    mStyle3FV
+                    mStyle3FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewSingleTitle(fruits, "水果", R.layout.textview_flow_title, R.layout.textview_flow_news, 0, 3)
                             .setUseSelected(true);
@@ -308,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
                     list.add(2);
                     list.add(5);
                     list.add(7);
-                    mStyle3FV
+                    mStyle3FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutileWithTitle(fruits, "水果", R.layout.textview_flow_title, R.layout.textview_flow_news, list, 3)
                             .setUseSelected(true);
@@ -338,8 +338,10 @@ public class MainActivity extends AppCompatActivity {
                     list.add(7);
                     mStyle4FV
                             .setButtonAttr(R.color.colorWhite,R.drawable.shape_rectangle_corner4_red_solid)
+                            .setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
-                            .addViewMutileClose(fruitsClose, R.layout.textview_flow, list, 4, false)
+
+                        .addViewMutileClose(fruitsClose, R.layout.textview_flow, list, 4, false)
                             .setUseSelected(true);
                 }
             }
@@ -360,33 +362,33 @@ public class MainActivity extends AppCompatActivity {
                     List list = new ArrayList();
                     list.add(2);
                     list.add(5);
-                    list.add(7);
+                    list.add(7); 
                     mStyle5FV.setAttr(R.color.color4dBlack,R.drawable.shape_rectangle_corner4_gray_solid)
-                            .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
-                            .setButtonAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_blue_solid)
-                            .addViewMutileAll(fruitsLastAll, R.layout.textview_flow, list, 5, false);
+                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
+                             .setButtonAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_blue_solid)
+                             .addViewMutileAll(fruitsLastAll, R.layout.textview_flow, list, 5, false);
                 }
             }
         });
         mStyle6RG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(checkedId==R.id.rb_all_two){
+                if(checkedId==R.id.rb_all_two){                    
                     List list = new ArrayList();
-                    list.add(2);
+                     list.add(2);
                     list.add(5);
                     list.add(7);
-                    mStyle6FV
+                    mStyle6FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutileTwoButton(fruitsTwo
                                     , R.layout.textview_flow_three_button, R.layout.textview_flow_three_button
                                     , R.layout.textview_flow, list, 6);
                 }else if(checkedId==R.id.rb_all_two_with_title){
                     List list = new ArrayList();
-                    list.add(2);
+                     list.add(2);
                     list.add(5);
                     list.add(7);
-                    mStyle6FV
+                    mStyle6FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutileTwoButtonWithTitle(fruitsTwo, "水果"
                                     , R.layout.textview_flow_title, R.layout.textview_flow_three_button
@@ -402,7 +404,7 @@ public class MainActivity extends AppCompatActivity {
                     list.add(2);
                     list.add(5);
                     list.add(7);
-                    mStyle7FV
+                    mStyle7FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutileThreeButton(fruitsThree
                                     , R.layout.textview_flow_three_button, R.layout.textview_flow_three_button
@@ -413,7 +415,7 @@ public class MainActivity extends AppCompatActivity {
                     list.add(2);
                     list.add(5);
                     list.add(7);
-                    mStyle7FV
+                    mStyle7FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .addViewMutileThreeButtonWithTitle(fruitsThree, "水果"
                                     , R.layout.textview_flow_title, R.layout.textview_flow_three_button
@@ -426,12 +428,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId==R.id.rb_single_title_common){
-                    mStyle8FV
+                    mStyle8FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setOneLineTitle(false).addViewSingleTitle(fruits, "水果"
                             , R.layout.textview_flow_title, R.layout.textview_flow, 0, 3);
                 }else if(checkedId==R.id.rb_single_title_oneline){
-                    mStyle8FV
+                    mStyle8FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setOneLineTitle(true).addViewSingleTitle(fruits, "水果"
                             , R.layout.textview_flow_title, R.layout.textview_flow, 0, 3);
@@ -446,7 +448,7 @@ public class MainActivity extends AppCompatActivity {
                             .setHorizonDivisor(12)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_horizon){
-                    mStyle9FV
+                    mStyle9FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setUseSelected(true).addViewSingle(fruits, R.layout.textview_flow, 0, 9, true)
                             .setHorizonDivisor(12)
@@ -455,7 +457,7 @@ public class MainActivity extends AppCompatActivity {
                     List<Integer> list = new ArrayList<>();
                     list.add(3);
                     list.add(4);
-                    mStyle9FV
+                    mStyle9FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setUseSelected(true).addViewMutile(fruits, R.layout.textview_flow, list, 9, true)
                             .setHorizonDivisor(12)
@@ -473,7 +475,7 @@ public class MainActivity extends AppCompatActivity {
                             .setUseGrid(true)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_horizon_grid){
-                    mStyle10FV
+                    mStyle10FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setOneLineCount(15)
                             .addViewSingle(fruits, R.layout.textview_flow, 0, 9, true)
@@ -483,7 +485,7 @@ public class MainActivity extends AppCompatActivity {
                     List<Integer> list = new ArrayList<>();
                     list.add(3);
                     list.add(4);
-                    mStyle10FV
+                    mStyle10FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setOneLineCount(15)
                             .addViewMutile(fruits, R.layout.textview_flow, list, 9, true)
@@ -500,7 +502,7 @@ public class MainActivity extends AppCompatActivity {
                             .setLineCount(4)
                             .setUseSelected(false);
                 }else if(checkedId==R.id.rb_single_horizon_autogrid){
-                    mStyle12FV
+                    mStyle12FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setUseSelected(true).addViewSingle(fruits, R.layout.textview_flow, 0, 9, true)
                             .setLineCount(4)
@@ -509,7 +511,7 @@ public class MainActivity extends AppCompatActivity {
                     List<Integer> list = new ArrayList<>();
                     list.add(3);
                     list.add(4);
-                    mStyle12FV
+                    mStyle12FV.setAttr(R.color.color4dBlack, R.drawable.shape_rectangle_corner4_gray_solid)
                             .setSelectedAttr(R.color.colorWhite, R.drawable.shape_rectangle_corner4_green_solid)
                             .setUseSelected(true).addViewMutile(fruits, R.layout.textview_flow, list, 9, true)
                             .setLineCount(4)
