@@ -55,7 +55,7 @@ allprojects {
 App_Gradle:
 ``` xml
 dependencies {
-	         compile 'com.github.liangzhongtai:FlowView:v1.0'
+	         compile 'com.github.liangzhongtai:FlowView:v1.1'
 	}
 ```
 
