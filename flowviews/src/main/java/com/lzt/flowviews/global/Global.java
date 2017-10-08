@@ -1,4 +1,4 @@
-package com.juzi.flowview.global;
+package com.lzt.flowviews.global;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -20,6 +20,7 @@ public class Global {
 	
 	//public static int systemType;
 	public static void init(Context context) {
+		if(mContext!=null)return;
 		mContext = context;
 		initScreenSize();
 		MAXMEMONRY = (int) (Runtime.getRuntime().maxMemory() / 1024);

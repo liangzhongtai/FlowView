@@ -18,13 +18,13 @@
         android:layout_weight="4"
         android:orientation="horizontal"
         >
-        <com.juzi.flowview.view.FlowView
+        <com.lzt.flowviews.view.FlowView
             android:id="@+id/fv_province"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             />
-        <com.juzi.flowview.view.FlowView
+        <com.lzt.flowviews.view.FlowView
             android:id="@+id/fv_city"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

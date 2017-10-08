@@ -116,7 +116,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
-    <com.juzi.flowview.view.FlowView
+    <com.lzt.flowviews.view.FlowView
         android:id="@+id/fv_hv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
-    <com.juzi.flowview.view.FlowView
+    <com.lzt.flowviews.view.FlowView
         android:id="@+id/fv_hv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

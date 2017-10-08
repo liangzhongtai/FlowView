@@ -24,7 +24,7 @@
         android:text="useGrid"
         />
 
-    <com.juzi.flowview.view.FlowView
+    <com.lzt.flowviews.view.FlowView
         android:id="@+id/fv_place"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         android:layout_marginRight="14dp"
         android:background="@color/color4dBlack"
         />
-    <com.juzi.flowview.view.FlowView
+    <com.lzt.flowviews.view.FlowView
         android:id="@+id/fv_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         android:layout_marginRight="14dp"
         android:background="@color/color4dBlack"
         />
-    <com.juzi.flowview.view.FlowView
+    <com.lzt.flowviews.view.FlowView
         android:id="@+id/fv_weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

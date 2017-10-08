@@ -6,7 +6,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 
-import com.juzi.flowview.view.FlowView;
+import com.lzt.flowviews.view.FlowView;
 
 /**
  * Created by liangzhongtai on 2017/9/19.

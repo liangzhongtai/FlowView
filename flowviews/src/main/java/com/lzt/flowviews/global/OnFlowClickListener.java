@@ -1,4 +1,4 @@
-package com.juzi.flowview.global;
+package com.lzt.flowviews.global;
 
 
 import android.view.View;

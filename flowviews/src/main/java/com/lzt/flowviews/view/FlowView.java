@@ -1,4 +1,4 @@
-package com.juzi.flowview.view;
+package com.lzt.flowviews.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -10,15 +10,14 @@ import android.graphics.Path;
 import android.graphics.PathDashPathEffect;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.juzi.flowview.R;
-import com.juzi.flowview.global.FlowAnimateUtils;
-import com.juzi.flowview.global.Global;
-import com.juzi.flowview.global.OnFlowClickListener;
+import com.lzt.flowviews.R;
+import com.lzt.flowviews.global.FlowAnimateUtils;
+import com.lzt.flowviews.global.Global;
+import com.lzt.flowviews.global.OnFlowClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -300,6 +299,7 @@ public class FlowView extends ViewGroup {
 
 	@SuppressWarnings("ResourceType")
 	public void init(AttributeSet attrs){
+		Global.init(getContext());
 		if(attrs != null) {
 			TypedArray array = getContext().obtainStyledAttributes(attrs, R.styleable.FlowView);
 			float density	= getResources().getDisplayMetrics().density;

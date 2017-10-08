@@ -1,4 +1,4 @@
-package com.juzi.flowview.global;
+package com.lzt.flowviews.global;
 
 
 import android.animation.Animator;
@@ -13,7 +13,6 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 
-import com.juzi.flowview.R;
 
 import java.util.Random;
 

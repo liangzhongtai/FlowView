@@ -30,7 +30,7 @@
             android:src="@android:drawable/ic_menu_search"
             />
     </RelativeLayout>
-    <com.juzi.flowview.view.FlowView
+    <com.lzt.flowviews.view.FlowView
         android:id="@+id/fv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
